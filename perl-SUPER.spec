@@ -6,14 +6,14 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	SUPER
 Summary:	SUPER - control superclass method dispatch
-Summary(pl.UTF-8):	SUPER -
+Summary(pl.UTF-8):	SUPER - przekazywanie sterowania do metod klasy nadrzędnej
 Name:		perl-SUPER
-Version:	1.16
+Version:	1.17
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/SUPER/%{pdir}-%{version}.tar.gz
-# Source0-md5:	3a0584598514f471f5df9480e12573c0
+# Source0-md5:	aa54aa7e9148c368091e34559587f3b2
 URL:		http://search.cpan.org/dist/SUPER/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -38,7 +38,8 @@ It's even worse in that the normal Perl redispatch mechanism only
 dispatches to the parent of the class containing the method at compile
 time. That doesn't work very well for mixins and roles.
 
-# %description -l pl.UTF-8 # TODO
+# %description -l pl.UTF-8
+# TODO
 
 %prep
 %setup -q -n %{pdir}-%{version}
