@@ -3,7 +3,6 @@
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	SUPER
 Summary:	SUPER - control superclass method dispatch
 Summary(pl.UTF-8):	SUPER - przekazywanie sterowania do metod klasy nadrzędnej
